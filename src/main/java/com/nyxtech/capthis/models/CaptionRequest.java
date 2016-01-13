@@ -14,7 +14,6 @@ public class CaptionRequest {
     @NotEmpty
     @NotNull
     private String userId;
-
     @NotEmpty
     @NotNull
     private String picId;

@@ -5,7 +5,7 @@
  */
 package com.nyxtech.capthis.repository;
 
-import com.nyxtech.capthis.entity.User;
+import com.nyxtech.capthis.entity.ClientDetail;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.io.Serializable;
@@ -14,10 +14,8 @@ import java.io.Serializable;
  *
  * @author varoqua
  */
-public interface UserRepository extends MongoRepository<User, Serializable> {
+public interface ClientDetailRepository extends MongoRepository<ClientDetail, Serializable> {
 
-    public User findByEmail(String email);
-
-    public User findByDisplayName(String displayName);
+    public ClientDetail findByClientId(String clientId);
 
 }
